@@ -23,7 +23,19 @@ document.getElementsByTagName("body")[0].appendChild(docRef)
 // $("#quizzes").load("index_1.html");
 $.get(chrome.extension.getURL('/index.html'), function(data) {
     // $(data).appendTo('body');
-    document.innerHTML = data
+    // console.log("data", data)
+    console.log(chrome.extension.getURL('/index.html'))
+    var url = chrome.extension.getURL('/index.html').replace("index.html", "")
+    //document.innerHTML = data
+    data = data.replace("/static/", url+"static/")
+    data = data.replace("/static/", url+"static/")
+    data = data.replace("/static/", url+"static/")
+    data = data.replace("/static/", url+"static/")
+    data = data.replace("/static/", url+"static/")
+
+    console.log("data", data)
+
+    $("#quizzes").html(data)
     // Or if you're using jQuery 1.8+:
     // $($.parseHTML(data)).appendTo('body');
 });
