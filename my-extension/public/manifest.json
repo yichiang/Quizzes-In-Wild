@@ -19,5 +19,8 @@
     "<all_urls>",
     "storage",
     "tabs"
-  ]
+  ],
+  "background": {
+   "scripts": ["background.js"]
+ }
 }
