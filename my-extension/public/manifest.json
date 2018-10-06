@@ -23,6 +23,7 @@
   "background": {
    "scripts": ["background.js"]
  },
+ "web_accessible_resources": ["index.html"],
  "content_scripts": [
   {
     "all_frames": false,
