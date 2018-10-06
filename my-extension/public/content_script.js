@@ -28,10 +28,6 @@ $.get(chrome.extension.getURL('/index.html'), function(data) {
     var url = chrome.extension.getURL('/index.html').replace("index.html", "")
     //document.innerHTML = data
     data = data.replace("/static/", url+"static/")
-    data = data.replace("/static/", url+"static/")
-    data = data.replace("/static/", url+"static/")
-    data = data.replace("/static/", url+"static/")
-    data = data.replace("/static/", url+"static/")
 
     console.log("data", data)
 
