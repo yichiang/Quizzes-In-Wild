@@ -1,5 +1,3 @@
-alert("here");
-
 function loadjscssfile(filename, filetype){
     if (filetype=="js"){ //if filename is a external JavaScript file
         var fileref=document.createElement('script')
@@ -18,13 +16,15 @@ function loadjscssfile(filename, filetype){
 
 // loadjscssfile("app.js", "js") //dynamically load and add this .js file
 var docRef=document.createElement("div")
+docRef.setAttribute("style", "position: fixed;right: 0;top: 0;height: 100vh;z-index: 10000;")
 docRef.setAttribute("id", "quizzes");
 document.getElementsByTagName("body")[0].appendChild(docRef)
+document.getElementsByTagName("body")[0].setAttribute("style", "width: calc(100% - 300px);");
 //document.getElementsByTagName("head")[0].appendChild('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">')
 $('head').append('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">');
 
 //$("#quizzes").html('<iframe src="http://localhost:8080/index.html"></iframe>')
-docRef.innerHTML = '<iframe src="http://localhost:8080/index.html"></iframe>'
+docRef.innerHTML = '<iframe src="http://localhost:8080/index.html" style="position: relative; height: 100%; width: 100%;"></iframe>'
 // $("#quizzes").load("index_1.html");
 // $.get(chrome.extension.getURL('/index.html'), function(data) {
 //     // $(data).appendTo('body');
