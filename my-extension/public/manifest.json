@@ -25,8 +25,8 @@
  },
  "content_scripts": [
   {
-    "all_frames": true,
-    "js": ["content_script.js"],
+    "all_frames": false,
+    "js": ["jquery-3.3.1.min.js", "content_script.js"],
     "matches": ["https://kubernetes.io/*"],
     "run_at": "document_idle"
   }

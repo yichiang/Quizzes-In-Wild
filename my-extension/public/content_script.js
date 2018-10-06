@@ -1,21 +1,30 @@
-// // Copyright 2017 The Chromium Authors. All rights reserved.
-// // Use of this source code is governed by a BSD-style license that can be
-// // found in the LICENSE file.
+alert("here");
 //
-// chrome.storage.local.get(['words'], function(object) {
-//   let regExp = new RegExp('\\b(' + object.words.join('|') + ')\\b');
-//   const kSets = [
-//     {selectors: 'p, span', color: '#f7d68f'},
-//     {selectors: 'li, td', color: '#89b1ed'},
-//     {selectors: 'h1, h2, h3, th', color: '#8ae2a0'}
-//   ];
-//   for (let set of kSets) {
-//     let elements = Array.from(document.querySelectorAll(set.selectors));
-//     for (let element of elements) {
-//       if (regExp.test(element.innerText))
-//         element.style.backgroundColor = set.color;
+// function loadjscssfile(filename, filetype){
+//     if (filetype=="js"){ //if filename is a external JavaScript file
+//         var fileref=document.createElement('script')
+//         fileref.setAttribute("type","text/javascript")
+//         fileref.setAttribute("src", filename)
 //     }
-//   }
-// });
+//     else if (filetype=="css"){ //if filename is an external CSS file
+//         var fileref=document.createElement("link")
+//         fileref.setAttribute("rel", "stylesheet")
+//         fileref.setAttribute("type", "text/css")
+//         fileref.setAttribute("href", filename)
+//     }
+//     if (typeof fileref!="undefined")
+//         document.getElementsByTagName("head")[0].appendChild(fileref)
+// }
 
-alert("this page")
+// loadjscssfile("app.js", "js") //dynamically load and add this .js file
+var docRef=document.createElement("div")
+
+
+// $( "#hero" ).load( "index.html" );
+function load_home() {
+     docRef.innerHTML='<object type="text/html" data="index.html" ></object>'
+     document.getElementById("body").appendChild(docRef)
+;
+}
+
+load_home();
