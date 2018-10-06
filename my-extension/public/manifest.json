@@ -18,7 +18,8 @@
   "permissions": [
     "<all_urls>",
     "storage",
-    "tabs"
+    "tabs",
+    "http://localhost:8080"
   ],
   "background": {
    "scripts": ["background.js"]
