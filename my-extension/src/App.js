@@ -72,8 +72,8 @@ handleClickOutside(event) {
  handleAddQuestion(newQuestion) {
   this.setState({
     questions: [
-      newQuestion,
-      ...this.state.questions
+      ...this.state.questions,
+      newQuestion
     ]
   });
  }
