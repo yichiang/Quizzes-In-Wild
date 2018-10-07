@@ -103,8 +103,8 @@ handleClickOutside(event) {
             </div>
 
               <div className="custom_question_text_hi">
-                <Icon name='lightbulb outline' color='red'/>
                 <p className="we-found-questi">
+                  <Icon name='lightbulb outline' color='red'/>
                     We found
                     <span className="custom_number_text"> {this.state.questions.length || 0} </span>
                    questions about  <span className='custom_hightlengthed_text'>{this.state.value ||  (window.location.hostname.length > 10 ? 'this site': window.location.hostname)}</span> for your answer</p>
