@@ -81,7 +81,7 @@ handleClickOutside(event) {
     return (
       <div className="custom_react_App">
           <div className="custom_header_panel">
-            <div>
+            <div className="top_custom_bar">
               <Icon name='angle left'/>
             <Button basic className='custom_save_pdf' content='Violet'>
               <Icon name='file pdf'/>

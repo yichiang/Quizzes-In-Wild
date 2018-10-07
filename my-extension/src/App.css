@@ -164,3 +164,9 @@ align-items: center;
   color: #6077F7 !important;
   border-color: 1px solid #6077F7 !important;
 }
+.top_custom_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
