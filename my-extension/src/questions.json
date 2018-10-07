@@ -2,7 +2,7 @@
     "questions": [
       {
         "name":"What is the Kubernetes?",
-        "tags":[],
+        "tags":["kubernetes", "container-orchestration system", "Google"],
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],
@@ -12,7 +12,7 @@
       },
       {
         "name":"What is Kubernetes and how to use it?",
-        "tags":[],
+        "tags":["kubernetes", "container-orchestration system", "Google"],
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],
@@ -22,7 +22,7 @@
       },
       {
         "name":"What is a docker?",
-        "tags":[],
+        "tags":["kubernetes", "container-orchestration system", "Google"],
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],
@@ -32,7 +32,7 @@
       },
       {
         "name":"What is the Kubelet?",
-        "tags":[],
+        "tags":["kubernetes", "container-orchestration system", "Google"],
         "domains":[],
         "answers":[],
         "choices":[],
@@ -42,7 +42,7 @@
       },
       {
         "name":"",
-        "tags":[],
+        "tags":["kubernetes", "container-orchestration system", "Google"],
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],

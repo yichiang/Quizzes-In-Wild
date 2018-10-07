@@ -18,7 +18,7 @@ function loadjscssfile(filename, filetype){
 
 // loadjscssfile("app.js", "js") //dynamically load and add this .js file
 var docRef=document.createElement("div")
-docRef.setAttribute("style", "position: fixed;right: 0;top: 0;height: 100vh;z-index: 10000;")
+docRef.setAttribute("style", "position: fixed;right: 0;top: 0;height: 100vh;z-index: 10000;width: 300px;")
 docRef.setAttribute("id", "quizzes");
 document.getElementsByTagName("body")[0].appendChild(docRef)
 document.getElementsByTagName("body")[0].setAttribute("style", "width: calc(100% - 300px);");
@@ -64,20 +64,20 @@ $.get(chrome.extension.getURL('/index.html'), function(data) {
     // $($.parseHTML(data)).appendTo('body');
 });
 
-
-var t = '';
-function gText(e) {
-    t = (document.all) ? document.selection.createRange().text : document.getSelection();
-    //var iframe = document.getElementById("iframe");
-    //var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-    //console.log("innerDoc", innerDoc);
-    // document.getElementById('input').value = t;
-    console.log(t)
-    console.log(t.focusNode.data)
-    console.log($("#myinput"))
-    // docRef.innerHTML = '<iframe src="http://localhost:8080/index.html" style="position: relative; height: 100%; width: 100%;"></iframe>'
-    $("#myinput").val(t.focusNode.data)
-}
-
-document.onmouseup = gText;
-if (!document.all) document.captureEvents(Event.MOUSEUP);
+//
+// var t = '';
+// function gText(e) {
+//     t = (document.all) ? document.selection.createRange().text : document.getSelection();
+//     //var iframe = document.getElementById("iframe");
+//     //var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+//     //console.log("innerDoc", innerDoc);
+//     // document.getElementById('input').value = t;
+//     console.log(t)
+//     console.log(t.focusNode.data)
+//     console.log($("#myinput"))
+//     // docRef.innerHTML = '<iframe src="http://localhost:8080/index.html" style="position: relative; height: 100%; width: 100%;"></iframe>'
+//     $("#myinput").val(t.focusNode.data)
+// }
+//
+// document.onmouseup = gText;
+// if (!document.all) document.captureEvents(Event.MOUSEUP);

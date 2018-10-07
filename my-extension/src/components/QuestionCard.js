@@ -14,7 +14,10 @@ class QuestionCard extends Component {
 
       </div>
      </Card.Header>
-       <Card.Meta>kubernetes</Card.Meta>
+       <Card.Meta>
+         {this.props.question.tags.map(x=> <span className="qitw_tag">{x}</span>)}
+
+       </Card.Meta>
        <Card.Description>
        </Card.Description>
      </Card.Content>
