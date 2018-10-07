@@ -81,15 +81,19 @@ class QuestionCard extends Component {
      <Card.Content extra>
        <div>
          {this.state.checked&&this.props.question.correctChoice != null &&
-              ( this.props.question.correctChoice - 1 ) === this.state.value ?
-              <p className='custom_check_your_anser'>
-                  <Icon name='check'/>Correct</p>
-              :   <p className='custom_check_your_anser'>
-                    <Icon name='check'/>InCorrect
-                  </p>
-             }
+          <div>
+            {( this.props.question.correctChoice - 1  === this.state.value )?
+            <p className='custom_check_your_anser'>
+                <Icon name='check'/>Correct
+              </p>
+            : <p className='custom_check_your_anser'>
+                  <Icon name='times'/>Incorrect
+                </p>
+              }
+          </div>
+        }
 
-           : <p className='custom_check_your_anser' onClick={this.handleSubmit}>
+        {!this.state.checked&& <p className='custom_check_your_anser' onClick={this.handleSubmit}>
               Check your answer
             </p>
          }

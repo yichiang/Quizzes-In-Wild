@@ -85,7 +85,8 @@ align-items: center;
     background: #6077F7 !important;
     height: 39px;
 width: 100%;
-margin-top: 20px;
+margin-top: 20px !important;
+
 }
 
 .custom_brandName{
