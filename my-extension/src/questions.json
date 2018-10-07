@@ -11,6 +11,137 @@
         "dismiss": 0
 
       },
+      
+      {
+        "name":"Who originated the term 'big bang'?",
+        "tags":["Big Bang Theory", "Fred Hoyle"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"Was the big bang an explosion?",
+        "tags":["Big Bang Theory", "explosion"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"What is singularity?",
+        "tags":["Big Bang Theory", "singularity"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"What are the four basic forces in the universe?",
+        "tags":["Big Bang Theory", "four basic forces"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"A device that divides light into a spectrum of its component wavelengths is called what?",
+        "tags":["Big Bang Theory", "spectroscope"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"Who discovered that the frequency of a sound wave depended upon the relative position of the source of the sound?",
+        "tags":["Big Bang Theory", "Christian Doppler"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"Who was the scientist who theorized that the universe is expanding because he observed that the further a star is from earth, the faster the star is traveling?",
+        "tags":["Big Bang Theory", "science"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"What is the significance of  cosmic microwave background radiation (CMB)?",
+        "tags":["Big Bang Theory", "cosmic microwave background radiatio"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"How does the steady-state model of the universe reconcile the evidence that the universe is always expanding but has a constant density?",
+        "tags":["Big Bang Theory", "steady-state model"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"Which model suggests our universe is the result of a collision of two three-dimensional worlds on a hidden fourth dimension?",
+        "tags":["Big Bang Theory", "Ekpyrotic"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"Which theory suggests our universe is one of a series of universes that first expand, then contract again?",
+        "tags":["Big Bang Theory", "big bounce"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"Who first suggested the big bang theory?",
+        "tags":["Big Bang Theory", "Georges Lemaître"],
+        "domains":["nationalgeographic.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
+      {
+        "name":"How long ago do big bang theorists believe it occurred?",
+        "tags":["Big Bang Theory", "science"],
+        "domains":["nationalgeographic.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+      },
+
       {
         "name":"What is the Kubernetes?",
         "tags":["kubernetes", "container-orchestration system", "google"],
