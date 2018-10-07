@@ -13,8 +13,8 @@
 }
 .ui.cards>.card{
     border-radius: 0 !important;
-    box-shadow: -1px -4px 7px -2px rgba(0,0,0,0.75);
-    width: 100%;
+	box-shadow: 0 0 10px 0 rgba(110,110,110,0.5);
+      width: 100%;
 
     margin-bottom: 10px;
 }
@@ -31,12 +31,12 @@
 .ui.checkbox input:indeterminate~.box:after, .ui.checkbox input:indeterminate~label:after {
     font-size: 12px;
     content: '\E801';
-    background: #1E8FE1;
+    background: #6077F7;
 }
 
 .ui.toggle.checkbox .box:before, .ui.toggle.checkbox label:before {
     background: none;
-    border: 1px solid #1E8FE1;
+    border: 1px solid #6077F7;
 }
 
 .custom_radio_toogle {
@@ -50,13 +50,63 @@
 .custom_panel{
   display: flex;
 justify-content: space-between;
+margin-bottom: 22px;
+align-items: center;
+}
+
+.custom_panel > p {
+  margin: 0;
 }
 .custom_radio_toogle_label {	height: 14px;	width: 38px;	color: #4A4A4A;	font-family: Avenir;	font-size: 10px;	font-weight: 300;	letter-spacing: -0.34px;	line-height: 14px;}
 .choose-your-level-to {	height: 20px;	width: 266px;	color: #4A4A4A;	font-family: Avenir;	font-size: 15px;	letter-spacing: -0.45px;	line-height: 20px;}
 .custom_react_App{
       max-width: 500px;
+      padding: 20px;
+    margin: auto;
 }
 
 .what-the-differen {
   	height: 22px;	width: 284px;	color: #4A4A4A;	font-family: Avenir;	font-size: 16px;	font-weight: 300;	letter-spacing: -0.39px;	line-height: 22px;
   }
+
+.answer-more-similar {
+    color: #FFFFFF !important;
+    font-family: Avenir !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.45px !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    background: #6077F7 !important;
+    height: 39px;
+width: 100%;
+margin-top: 20px;
+}
+
+.custom_brandName{
+  	height: 20px;	width: 123px;	color: #9B9B9B;	font-family: Avenir;	font-size: 15px;	font-weight: 500;	letter-spacing: -0.45px;	line-height: 20px;
+}
+
+
+.custom_header_panel{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.we-found-questi {	height: 19px;	width: 363px;	color: #4A4A4A;	font-family: Avenir;	font-size: 14px;	font-weight: 300;	letter-spacing: -0.42px;	line-height: 19px;}
+.custom_hightlengthed_text{
+  background: #6077F7;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 14px;
+  padding: 5px;
+  margin: 3px;
+}
+.custom_number_text{
+  padding: 2px;
+  font-weight: 500;
+}
+.custom_question_text_hi{
+  display: flex;
+  margin-bottom: 22px;
+}

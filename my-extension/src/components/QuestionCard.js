@@ -7,7 +7,7 @@ class QuestionCard extends Component {
     super(props);
     this.state = {value: ""};
     this.handleChange = this.handleChange.bind(this);
-  } 
+  }
 
   handleChange(e, {value}) {
     this.setState({value});
@@ -20,7 +20,7 @@ class QuestionCard extends Component {
        <Card.Header>
       <div className="qitw_col">
         <div className="what-the-differen">{this.props.question.name}</div>
-        <Icon disabled name='times' onClick={() => this.props.onDismissQuestion(this.props.questionIndex)}/>
+        <Icon name='times' onClick={() => this.props.onDismissQuestion(this.props.questionIndex)}/>
 
       </div>
      </Card.Header>

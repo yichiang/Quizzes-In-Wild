@@ -3,7 +3,7 @@ import './App.css';
 import Question from './components/Question';
 import questionData from './questions.json';
 import AddQuestion from './components/AddQuestion';
-import { Message, Radio } from 'semantic-ui-react'
+import { Message, Radio, Button, Divider, Icon } from 'semantic-ui-react'
 
 class App extends Component {
   constructor(props) {
@@ -79,6 +79,14 @@ handleClickOutside(event) {
   render() {
     return (
       <div className="custom_react_App">
+          <div className="custom_header_panel">
+            <div>
+              <Icon name='angle left'/>
+            <Button basic color='violet' content='Violet'>Save View PDF</Button></div>
+            <p className="custom_brandName">Quizzes in the Wild</p>
+          </div>
+            <Divider section />
+
             <div className="custom_panel">
               <p className="choose-your-level-to">Choose your level to start taking quizzes:</p>
               <div className="custom_toogle_group">
@@ -86,13 +94,22 @@ handleClickOutside(event) {
               <Radio toggle className="custom_radio_toogle"/>
               <span className="custom_radio_toogle_label">Advanced</span></div>
             </div>
-            {this.state.value&&
+            {!this.state.value&&
+              <div className="custom_question_text_hi">
+                <Icon name='lightbulb outline' color='red'/>
+                <p className="we-found-questi">
+                    We found
+                    <span className="custom_number_text"> {this.state.questions.length || 0} </span>
+                   questions about  <span className='custom_hightlengthed_text'>{this.state.value ||  window.location.hostname}</span> for your answer</p>
+              </div>
+            }
+            {/* {this.state.value&&
               <Message floating>
                   You highlighted:  {this.state.value}
 
                <input id="myinput"  type="hidden" name="highlightedText" value={this.state.value} onChange={this.handleChange}/>
              </Message>
-           }
+           } */}
 
 
 

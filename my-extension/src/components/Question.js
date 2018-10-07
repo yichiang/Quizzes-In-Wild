@@ -7,11 +7,16 @@ class Question extends Component {
   render() {
     console.log(this.props)
     return (
-      <Card.Group>
-        {
-          this.props.questionData.map((x,i) =><QuestionCard question={x} questionIndex={i} onDismissQuestion={this.props.onDismissQuestion}/>)
-        }
-</Card.Group>
+      <div>
+        <Card.Group>
+          {
+            this.props.questionData.map((x,i) =><QuestionCard question={x} questionIndex={i} onDismissQuestion={this.props.onDismissQuestion}/>)
+          }
+        </Card.Group>
+        <Button className="answer-more-similar">
+          Answer more similar questions
+        </Button>
+      </div>
 
     );
   }
