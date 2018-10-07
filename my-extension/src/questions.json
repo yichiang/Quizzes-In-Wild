@@ -1,0 +1,74 @@
+{
+    "questions": [
+      {
+        "name":"What is the Kubernetes?",
+        "tags":[],
+        "domains":["kubernetes.io"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+
+      },
+      {
+        "name":"What is Kubernetes and how to use it?",
+        "tags":[],
+        "domains":["kubernetes.io"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+
+      },
+      {
+        "name":"What is a docker?",
+        "tags":[],
+        "domains":["kubernetes.io"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+
+      },
+      {
+        "name":"What is the Kubelet?",
+        "tags":[],
+        "domains":[],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+
+      },
+      {
+        "name":"",
+        "tags":[],
+        "domains":["kubernetes.io"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+
+      },
+      {
+        "name":"",
+        "tags":[],
+        "domains":["kubernetes.io"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+
+      },
+      {
+        "name":"",
+        "tags":[],
+        "domains":["kubernetes.io"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+
+      }
+    ]
+}

@@ -1,20 +1,17 @@
 import React, {Component} from 'react';
-import {Container, List, Button} from 'semantic-ui-react';
+// import {Container, List, Button} from 'semantic-ui-react';
+import { Button, Card, Image, Icon } from 'semantic-ui-react'
+import QuestionCard from './QuestionCard';
 
 class Question extends Component {
-  render(props) {
+  render() {
+    console.log(this.props)
     return (
-      <Container>
-        <h2>
-          {props.questionNumber} What is the worst fruit in a fruit cup?
-        </h2>
-        <List>
-          <List.Item><Button>Canteloupe</Button></List.Item>
-          <List.Item><Button>Watermelon</Button></List.Item>
-          <List.Item><Button>Orange</Button></List.Item>
-          <List.Item><Button>Raspberry</Button></List.Item>
-        </List>
-      </Container>
+      <Card.Group>
+        { this.props.questionData.map(x=><QuestionCard question={x}/>)
+}
+</Card.Group>
+
     );
   }
 };

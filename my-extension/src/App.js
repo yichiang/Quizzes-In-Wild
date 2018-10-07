@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Question from './components/Question';
+import questionData from './questions.json';
 
 class App extends Component {
   render() {
@@ -9,7 +10,7 @@ class App extends Component {
       <div className="App">
         App
         <input id="myinput" />
-        <Question questionNumber="1" />
+        <Question questionData={questionData.questions} />
       </div>
     );
   }
