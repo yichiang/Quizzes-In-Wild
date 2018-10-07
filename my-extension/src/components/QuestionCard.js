@@ -5,7 +5,7 @@ import { Button, Card, Image, Icon } from 'semantic-ui-react'
 class QuestionCard extends Component {
   render() {
     return (
-   <Card>
+   <Card style={{"borderRadus" :0}}>
      <Card.Content>
        <Card.Header>
       <div className="qitw_col">
