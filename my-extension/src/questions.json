@@ -3,7 +3,7 @@
 
       {
         "name":"How the Big Bang Theory Works",
-        "tags":["Big Bang Theory", "science"],
+        "tags":["big bang theory", "science"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -16,7 +16,7 @@
 
       {
         "name":"Who originated the term 'big bang'?",
-        "tags":["Big Bang Theory", "Fred Hoyle"],
+        "tags":["big bang theory", "fred hoyle"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -28,7 +28,7 @@
 
       {
         "name":"Was the big bang an explosion?",
-        "tags":["Big Bang Theory", "explosion"],
+        "tags":["big bang theory", "explosion"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -40,7 +40,7 @@
 
       {
         "name":"What is singularity?",
-        "tags":["Big Bang Theory", "singularity"],
+        "tags":["big bang theory", "singularity"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -53,7 +53,7 @@
 
       {
         "name":"What are the four basic forces in the universe?",
-        "tags":["Big Bang Theory", "four basic forces"],
+        "tags":["big bang theory", "four basic forces"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -65,7 +65,7 @@
 
       {
         "name":"A device that divides light into a spectrum of its component wavelengths is called what?",
-        "tags":["Big Bang Theory", "spectroscope"],
+        "tags":["big bang theory", "spectroscope"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -77,7 +77,7 @@
 
       {
         "name":"Who discovered that the frequency of a sound wave depended upon the relative position of the source of the sound?",
-        "tags":["Big Bang Theory", "Christian Doppler"],
+        "tags":["big bang theory", "christian doppler"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -89,7 +89,7 @@
 
       {
         "name":"Who was the scientist who theorized that the universe is expanding because he observed that the further a star is from earth, the faster the star is traveling?",
-        "tags":["Big Bang Theory", "science"],
+        "tags":["big bang theory", "science"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -101,7 +101,7 @@
 
       {
         "name":"What is the significance of  cosmic microwave background radiation (CMB)?",
-        "tags":["Big Bang Theory", "cosmic microwave background radiatio"],
+        "tags":["big bang theory", "cosmic microwave background radiatio"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -113,7 +113,7 @@
 
       {
         "name":"How does the steady-state model of the universe reconcile the evidence that the universe is always expanding but has a constant density?",
-        "tags":["Big Bang Theory", "steady-state model"],
+        "tags":["big bang theory", "steady-state model"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -125,7 +125,7 @@
 
       {
         "name":"Which model suggests our universe is the result of a collision of two three-dimensional worlds on a hidden fourth dimension?",
-        "tags":["Big Bang Theory", "Ekpyrotic"],
+        "tags":["big bang theory", "Ekpyrotic"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -135,7 +135,7 @@
 
       {
         "name":"Which theory suggests our universe is one of a series of universes that first expand, then contract again?",
-        "tags":["Big Bang Theory", "big bounce"],
+        "tags":["big bang theory", "big bounce"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
@@ -147,7 +147,7 @@
 
       {
         "name":"Who first suggested the big bang theory?",
-        "tags":["Big Bang Theory", "Georges Lemaître"],
+        "tags":["big bang theory", "georges lemaître"],
         "domains":["nationalgeographic.com"],
         "answers":[],
         "choices":[],
@@ -159,7 +159,7 @@
 
       {
         "name":"How long ago do big bang theorists believe it occurred?",
-        "tags":["Big Bang Theory", "science"],
+        "tags":["big bang theory", "science"],
         "domains":["nationalgeographic.com"],
         "answers":[],
         "choices":[],
