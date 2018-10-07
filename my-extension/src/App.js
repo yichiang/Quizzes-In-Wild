@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Question from './components/Question';
 import questionData from './questions.json';
+import AddQuestion from './components/AddQuestion';
 import { Message } from 'semantic-ui-react'
 
 class App extends Component {
@@ -19,6 +20,8 @@ class App extends Component {
       this.handleChange = this.handleChange.bind(this);
       // this.handleSubmit = this.handleSubmit.bind(this);  this.setWrapperRef = this.setWrapperRef.bind(this);
       this.handleClickOutside = this.handleClickOutside.bind(this);
+      this.handleAddQuestion = this.handleAddQuestion.bind(this);
+      // this.handleDomain = this.handleDomain.bind(this);
       this.onDismissQuestion = this.onDismissQuestion.bind(this);
       // this.handleDomain();
     }
@@ -64,6 +67,15 @@ handleClickOutside(event) {
    // this.setState({questions: foundQuestions})
 
  }
+ handleAddQuestion(newQuestion) {
+  this.setState({
+    questions: [
+      newQuestion,
+      ...this.state.questions
+    ]
+  });
+ }
+
   render() {
     return (
       <div className="App">
@@ -71,8 +83,9 @@ handleClickOutside(event) {
           You highlighted:
           {this.state.value}
 
-          <input id="myinput"  type="hidden" name="highlightedText" value={this.state.value} onChange={this.handleChange} onchange={this.handleChange} />
+          <input id="myinput"  type="hidden" name="highlightedText" value={this.state.value} onChange={this.handleChange}/>
         </Message>
+        <AddQuestion onAddQuestion={this.handleAddQuestion}/>
         <Question questionData={this.state.questions} onDismissQuestion={this.onDismissQuestion}/>
       </div>
     );

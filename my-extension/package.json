@@ -12,7 +12,7 @@
   },
   "scripts": {
     "startWin": "($env:HTTPS = $true) -and (react-scripts start)",
-    "start": "HTTPS=true PORT=8080 react-scripts start",
+    "start": "PORT=8080 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
