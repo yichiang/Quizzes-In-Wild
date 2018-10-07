@@ -8,6 +8,7 @@ class QuestionCard extends Component {
     this.state = {"value": "", "checked": false};
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSubmitAnswer = this.handleSubmitAnswer.bind(this);
   }
 
   handleChange(e, {value}) {
@@ -22,6 +23,11 @@ class QuestionCard extends Component {
     console.log(this.props.question.correctChoice)
     console.log(this.state.value)
 
+    this.setState({"checked": true});
+
+  }
+
+  handleSubmitAnswer(){
     this.setState({"checked": true});
 
   }
@@ -93,10 +99,22 @@ class QuestionCard extends Component {
           </div>
         }
 
-        {!this.state.checked&& <p className='custom_check_your_anser' onClick={this.handleSubmit}>
+        {this.state.checked&&this.props.question.correctChoice == null &&
+         <div>
+          {this.props.question.answers.map(x=> <p>{x}</p>)}
+         </div>
+       }
+
+        {!this.state.checked&&this.props.question.correctChoice != null&& <p className='custom_check_your_anser' onClick={this.handleSubmit}>
               Check your answer
             </p>
          }
+
+
+         {!this.state.checked&&this.props.question.correctChoice == null&& <p className='custom_check_your_anser' onClick={this.handleSubmitAnswer}>
+               View answer
+             </p>
+          }
 
          {/* <Button basic color='red'>
            Skip

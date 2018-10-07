@@ -46,6 +46,19 @@
         "choices":[],
         "votes": 677,
         "downvotes": 0,
+        "level":1,
+
+        "dismiss": 0
+      },
+
+      {
+        "name":"What exactly is the singularity in physics?",
+        "tags":["big bang theory", "singularity"],
+        "domains":["science.howstuffworks.com"],
+        "answers":["“Definition of singularity, a point or region of infinite mass density at which space and time are infinitely distorted by gravitational forces and which is held to be the final state of matter falling into a black hole.”"],
+        "choices":[],
+        "votes": 677,
+        "downvotes": 0,
         "level":2,
 
         "dismiss": 0
