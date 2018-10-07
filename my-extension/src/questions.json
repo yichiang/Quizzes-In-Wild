@@ -7,18 +7,22 @@
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":1,
         "dismiss": 0
 
       },
-      
+
       {
         "name":"Who originated the term 'big bang'?",
         "tags":["Big Bang Theory", "Fred Hoyle"],
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":1,
         "dismiss": 0
       },
 
@@ -28,7 +32,9 @@
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":1,
         "dismiss": 0
       },
 
@@ -38,7 +44,10 @@
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
+
         "dismiss": 0
       },
 
@@ -48,7 +57,9 @@
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
       },
 
@@ -58,7 +69,9 @@
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
       },
 
@@ -68,7 +81,9 @@
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
       },
 
@@ -78,7 +93,9 @@
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
       },
 
@@ -88,7 +105,9 @@
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
       },
 
@@ -98,7 +117,9 @@
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
       },
 
@@ -118,7 +139,9 @@
         "domains":["science.howstuffworks.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
       },
 
@@ -128,7 +151,9 @@
         "domains":["nationalgeographic.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
       },
 
@@ -138,37 +163,51 @@
         "domains":["nationalgeographic.com"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
       },
 
       {
-        "name":"What is the Kubernetes?",
+        "name":"At its core, Kubernetes is a platform for?",
         "tags":["kubernetes", "container-orchestration system", "google"],
         "domains":["kubernetes.io"],
-        "answers":[],
-        "choices":["container-orchestration system", "candy"],
-        "votes": 0,
+        "answers":["Kubernetes allows you to orchestrate and manage containers on distributed systems."],
+        "choices":["Provisioning machines (similar to Puppet, Ansible)", "Running and scheduling container applications on a cluster", "Packaging software in containers"],
+        "source": "https://kubernetesbootcamp.github.io/kubernetes-bootcamp/",
+        "correctChoice": 2,
+        "votes": 102,
+        "downvotes": 1,
+        "level":1,
         "dismiss": 0
 
       },
       {
-        "name":"What is Kubernetes and how to use it?",
+        "name":"In Kubernetes, a node is?",
         "tags":["kubernetes", "container-orchestration system", "google"],
         "domains":["kubernetes.io"],
-        "answers":[],
-        "choices":[],
-        "votes": 0,
+        "answers":["The Kubernetes nodes are the place where we’re going to deploy our applications"],
+        "choices":["A tool for starting a kubernetes cluster on a local machine", "A worker machine", "The Master is coordinating the Kubernetes cluster"],
+        "source": "https://kubernetesbootcamp.github.io/kubernetes-bootcamp/",
+        "correctChoice": 2,
+        "votes": 400,
+        "downvotes": 2,
+        "level":1,
         "dismiss": 0
 
       },
       {
-        "name":"What is a docker?",
+        "name":"What can you deploy on Kubernetes?",
         "tags":["kubernetes", "container-orchestration system", "google"],
         "domains":["kubernetes.io"],
-        "answers":[],
-        "choices":[],
-        "votes": 0,
+        "source": "https://kubernetesbootcamp.github.io/kubernetes-bootcamp/",
+        "correctChoice": 1,
+        "answers":["Kubernetes supports Docker, rkt and other types of containers"],
+        "choices":["Containers", "Virtual machines", "System processes (like sshd, httpd)"],
+        "votes": 677,
+        "downvotes": 0,
+        "level":1,
         "dismiss": 0
 
       },
@@ -178,17 +217,23 @@
         "domains":[],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
 
       },
       {
-        "name":"",
+        "name":"What is a Deployment?",
         "tags":["kubernetes", "container-orchestration system", "google"],
         "domains":["kubernetes.io"],
-        "answers":[],
-        "choices":[],
-        "votes": 0,
+        "source": "https://kubernetesbootcamp.github.io/kubernetes-bootcamp/",
+        "answers":["A Deployment is responsible for creating and updating instances of your application"],
+        "choices":["A type of container", "A Deployment is responsible for managing the desired state of your applications", "A type of Kubernetes host"],
+        "correctChoice": 2,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
 
       },
@@ -198,7 +243,9 @@
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
 
       },
@@ -208,7 +255,9 @@
         "domains":["kubernetes.io"],
         "answers":["Restarts containers that fail, replaces and reschedules containers when nodes die, kills containers that don’t respond to your user-defined health check, and doesn’t advertise them to clients until they are ready to serve"],
         "choices":[],
-        "votes": 0,
+        "votes": 677,
+        "downvotes": 0,
+        "level":2,
         "dismiss": 0
 
       }

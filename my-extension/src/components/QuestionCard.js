@@ -23,11 +23,11 @@ class QuestionCard extends Component {
         <div className="qitw_col">
           <div>
             <span className='custom_upvotes'>
-              <span>321 Upvotes</span>
+              <span>{this.props.question.votes || 0} Upvotes</span>
               <Icon name='thumbs up' />
             </span>
             <span className='custom_downvotes'>
-              <span>1 Downvotes</span>
+              <span>{this.props.question.downvotes || 0} Downvotes</span>
               <Icon name='thumbs down' />
             </span>
           </div>
@@ -45,16 +45,14 @@ class QuestionCard extends Component {
       </div>
 
      </Card.Header>
-       <Card.Meta className="qitw_tag_parent">
-         {this.props.question.tags.map(x=> <span className="qitw_tag">{x}</span>)}
 
-       </Card.Meta>
        <Card.Description>
         <Form>
           <Form.Field>
           {
             this.props.question.choices.map((x,i) =>
               <Radio
+                className='custom_options_radio'
                 label={x}
                 name='radioGroup'
                 value={x}
@@ -67,6 +65,7 @@ class QuestionCard extends Component {
         </Form>
        </Card.Description>
      </Card.Content>
+
      <Card.Content extra>
        <div>
          <p className='custom_check_your_anser'>
@@ -75,6 +74,13 @@ class QuestionCard extends Component {
          {/* <Button basic color='red'>
            Skip
          </Button> */}
+         {this.props.question.source &&
+           <span className="custom_source_text">Source: {this.props.question.source}</span>
+         }
+       </div>
+       <div className="qitw_tag_parent">
+         {this.props.question.tags.map(x=> <span className="qitw_tag">{x}</span>)}
+
        </div>
      </Card.Content>
    </Card>
