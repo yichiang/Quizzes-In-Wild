@@ -80,8 +80,7 @@ class QuestionCard extends Component {
 
      <Card.Content extra>
        <div>
-         {this.state.checked?
-              {this.props.question.correctChoice != null &&
+         {this.state.checked&&this.props.question.correctChoice != null &&
               ( this.props.question.correctChoice - 1 ) === this.state.value ?
               <p className='custom_check_your_anser'>
                   <Icon name='check'/>Correct</p>
