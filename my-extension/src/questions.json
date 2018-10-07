@@ -1,5 +1,16 @@
 {
     "questions": [
+
+      {
+        "name":"How the Big Bang Theory Works",
+        "tags":["Big Bang Theory", "science"],
+        "domains":["science.howstuffworks.com"],
+        "answers":[],
+        "choices":[],
+        "votes": 0,
+        "dismiss": 0
+
+      },
       {
         "name":"What is the Kubernetes?",
         "tags":["kubernetes", "container-orchestration system", "Google"],
@@ -51,8 +62,8 @@
 
       },
       {
-        "name":"",
-        "tags":[],
+        "name":"What is Plant Scale",
+        "tags":["kubernetes", "container-orchestration system", "Google", "Plant Scale"],
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],
@@ -61,10 +72,10 @@
 
       },
       {
-        "name":"",
-        "tags":[],
+        "name":"How Self healing on kubernetes ?",
+        "tags":["kubernetes", "Self-healing"],
         "domains":["kubernetes.io"],
-        "answers":[],
+        "answers":["Restarts containers that fail, replaces and reschedules containers when nodes die, kills containers that don’t respond to your user-defined health check, and doesn’t advertise them to clients until they are ready to serve"],
         "choices":[],
         "votes": 0,
         "dismiss": 0

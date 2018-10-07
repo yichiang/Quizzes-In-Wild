@@ -7,11 +7,20 @@ import { Message } from 'semantic-ui-react'
 class App extends Component {
   constructor(props) {
       super(props);
-      this.state = {value: ''};
+      var hostname = window.location.hostname;
+      console.log(hostname)
+      hostname = hostname === "localhost" ? "kubernetes.io": hostname;
+
+      var foundQuestions = questionData.questions.filter(x=> x.domains.indexOf(hostname.toLowerCase())> -1 );
+
+      this.state = {value: '', questions: foundQuestions};
+
 
       this.handleChange = this.handleChange.bind(this);
       // this.handleSubmit = this.handleSubmit.bind(this);  this.setWrapperRef = this.setWrapperRef.bind(this);
       this.handleClickOutside = this.handleClickOutside.bind(this);
+      // this.handleDomain = this.handleDomain.bind(this);
+      // this.handleDomain();
     }
 
 
@@ -35,6 +44,18 @@ handleClickOutside(event) {
    //   alert('You clicked outside of me!');
    // }
  }
+
+ handleDomain(){
+   // var hostname = window.location.hostname
+   // console.log(hostname);
+   // console.log(this)
+   // console.log("handleDomain", this.state.questions.filter(x=> x.domains.indexOf(hostname.toLowerCase())> -1 ))
+   // var foundQuestions = this.state.questions.filter(x=> x.domains.indexOf(hostname.toLowerCase())> -1 );
+   // console.log("foundQuestions", foundQuestions)
+   //
+   // this.setState({questions: foundQuestions})
+
+ }
   render() {
     return (
       <div className="App">
@@ -44,7 +65,7 @@ handleClickOutside(event) {
 
           <input id="myinput"  type="hidden" name="highlightedText" value={this.state.value} onChange={this.handleChange} onchange={this.handleChange} />
         </Message>
-        <Question questionData={questionData.questions} />
+        <Question questionData={this.state.questions} />
       </div>
     );
   }
