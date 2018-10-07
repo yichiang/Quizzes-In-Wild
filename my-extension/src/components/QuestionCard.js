@@ -1,8 +1,18 @@
 import React, {Component} from 'react';
 // import {Container, List, Button} from 'semantic-ui-react';
-import { Button, Card, Image, Icon } from 'semantic-ui-react'
+import { Button, Card, Image, Icon, Form, Radio } from 'semantic-ui-react'
 
 class QuestionCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ""};
+    this.handleChange = this.handleChange.bind(this);
+  } 
+
+  handleChange(e, {value}) {
+    this.setState({value});
+  }
+
   render() {
     return (
    <Card style={{"borderRadus" :0}}>
@@ -19,6 +29,21 @@ class QuestionCard extends Component {
 
        </Card.Meta>
        <Card.Description>
+        <Form>
+          <Form.Field>
+          {
+            this.props.question.choices.map((x,i) =>
+              <Radio
+                label={x}
+                name='radioGroup'
+                value={x}
+                checked={this.state.value === x}
+                onChange={this.handleChange}
+              />
+            )
+          }
+          </Form.Field>
+        </Form>
        </Card.Description>
      </Card.Content>
      <Card.Content extra>
