@@ -5,7 +5,7 @@ import { Button, Card, Image, Icon } from 'semantic-ui-react'
 class QuestionCard extends Component {
   render() {
     return (
-   <Card>
+   <Card style={{"borderRadus" :0}}>
      <Card.Content>
        <Card.Header>
       <div className="qitw_col">
@@ -14,7 +14,7 @@ class QuestionCard extends Component {
 
       </div>
      </Card.Header>
-       <Card.Meta>
+       <Card.Meta className="qitw_tag_parent">
          {this.props.question.tags.map(x=> <span className="qitw_tag">{x}</span>)}
 
        </Card.Meta>
