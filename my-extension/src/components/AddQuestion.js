@@ -49,7 +49,10 @@ class AddQuestion extends Component {
         </Card.Content>
         <Card.Content extra>
           {this.state.asking ?
-            <Input onChange={this.handleChange} action={<Button onClick={this.handleOnClickInput}>Add</Button>} placeholder='Type...' />
+            <div>
+              <Input onChange={this.handleChange} placeholder='Type...' />
+              <Button onClick={this.handleOnClickInput}>Add</Button>
+            </div>
             :
             <Button basic color='green' onClick={this.handleOnClickAsk}>
               Add a Question

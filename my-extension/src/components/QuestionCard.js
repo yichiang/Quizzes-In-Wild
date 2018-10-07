@@ -103,7 +103,7 @@ class QuestionCard extends Component {
           </div>
         }
 
-        {this.state.checked&&this.props.question.correctChoice == null &&
+        {this.state.checked&&(this.props.question.correctChoice == null ||  ( this.props.question.correctChoice - 1  === this.state.value ))&&
          <div>
           {this.props.question.answers.map(x=> <p>{x}</p>)}
          </div>
