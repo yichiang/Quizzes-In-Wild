@@ -59,7 +59,11 @@ class QuestionCard extends Component {
        <Divider />
       <div className="qitw_col">
         <div className="what-the-differen">{this.props.question.name}</div>
-
+        <span className="posted-on-date">{this.props.question.level&&this.props.question.level > 1 ?
+          <span className="custom_level_label custom_level_label_hard">Hard</span>
+          :
+          <span className="custom_level_label custom_level_label_easy">Easy</span>
+        }</span>
       </div>
 
      </Card.Header>
