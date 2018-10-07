@@ -164,3 +164,13 @@ align-items: center;
   color: #6077F7 !important;
   border-color: 1px solid #6077F7 !important;
 }
+.logo {
+  width: 100px;
+  height: 46px;
+}
+
+.logo-cls-1 {fill: #fff;}
+.logo-cls-2 {fill: #6077f7;}
+.logo-cls-3 {opacity: 0;}
+.logo-cls-4 {mask: url(#mask);}
+.logo-cls-5 {isolation: isolate;}
