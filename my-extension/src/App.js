@@ -39,7 +39,9 @@ handleClickOutside(event) {
   console.log(event)
   var t = (document.all) ? document.selection.createRange().text : document.getSelection();
   console.log(t)
-  this.setState({value: t.focusNode.data})
+  var text = window.getSelection().toString();
+
+  this.setState({value: text})
    // if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
    //   alert('You clicked outside of me!');
    // }
