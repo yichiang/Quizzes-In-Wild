@@ -14,7 +14,7 @@ class QuestionCard extends Component {
 
       </div>
      </Card.Header>
-       <Card.Meta>
+       <Card.Meta className="qitw_tag_parent">
          {this.props.question.tags.map(x=> <span className="qitw_tag">{x}</span>)}
 
        </Card.Meta>
