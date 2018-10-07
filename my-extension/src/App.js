@@ -13,7 +13,7 @@ class App extends Component {
 
       var foundQuestions = questionData.questions.filter(x=> x.domains.indexOf(hostname.toLowerCase())> -1 );
 
-      this.state = {value: '', questions: foundQuestions};
+      this.state = {value: '', questions: foundQuestions, "domainQuestion": foundQuestions};
 
 
       this.handleChange = this.handleChange.bind(this);
@@ -40,8 +40,9 @@ handleClickOutside(event) {
   var t = (document.all) ? document.selection.createRange().text : document.getSelection();
   console.log(t)
   var text = window.getSelection().toString();
-
-  this.setState({value: text})
+  var questions = [...this.state.domainQuestion];
+  questions = questions.filter(x => x.tags.filter( y=> y.indexOf(text.toLowerCase()) > -1).length > 0)
+  this.setState({value: text, questions: questions})
    // if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
    //   alert('You clicked outside of me!');
    // }

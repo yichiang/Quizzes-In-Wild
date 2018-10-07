@@ -13,7 +13,7 @@
       },
       {
         "name":"What is the Kubernetes?",
-        "tags":["kubernetes", "container-orchestration system", "Google"],
+        "tags":["kubernetes", "container-orchestration system", "google"],
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],
@@ -23,7 +23,7 @@
       },
       {
         "name":"What is Kubernetes and how to use it?",
-        "tags":["kubernetes", "container-orchestration system", "Google"],
+        "tags":["kubernetes", "container-orchestration system", "google"],
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],
@@ -33,7 +33,7 @@
       },
       {
         "name":"What is a docker?",
-        "tags":["kubernetes", "container-orchestration system", "Google"],
+        "tags":["kubernetes", "container-orchestration system", "google"],
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],
@@ -43,7 +43,7 @@
       },
       {
         "name":"What is the Kubelet?",
-        "tags":["kubernetes", "container-orchestration system", "Google"],
+        "tags":["kubernetes", "container-orchestration system", "google"],
         "domains":[],
         "answers":[],
         "choices":[],
@@ -53,7 +53,7 @@
       },
       {
         "name":"",
-        "tags":["kubernetes", "container-orchestration system", "Google"],
+        "tags":["kubernetes", "container-orchestration system", "google"],
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],
@@ -63,7 +63,7 @@
       },
       {
         "name":"What is Plant Scale",
-        "tags":["kubernetes", "container-orchestration system", "Google", "Plant Scale"],
+        "tags":["kubernetes", "container-orchestration system", "google", "planet scale"],
         "domains":["kubernetes.io"],
         "answers":[],
         "choices":[],
@@ -73,7 +73,7 @@
       },
       {
         "name":"How Self healing on kubernetes ?",
-        "tags":["kubernetes", "Self-healing"],
+        "tags":["kubernetes", "self-healing"],
         "domains":["kubernetes.io"],
         "answers":["Restarts containers that fail, replaces and reschedules containers when nodes die, kills containers that don’t respond to your user-defined health check, and doesn’t advertise them to clients until they are ready to serve"],
         "choices":[],
