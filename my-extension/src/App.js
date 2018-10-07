@@ -4,6 +4,7 @@ import Question from './components/Question';
 import questionData from './questions.json';
 import AddQuestion from './components/AddQuestion';
 import { Message, Radio, Button, Divider, Icon } from 'semantic-ui-react'
+// import mainLogo from'./logo.png';
 
 class App extends Component {
   constructor(props) {
@@ -84,6 +85,8 @@ handleClickOutside(event) {
               <Icon name='angle left'/>
             <Button basic color='violet' content='Violet'>Save View PDF</Button></div>
             <p className="custom_brandName">Quizzes in the Wild</p>
+            {/* <img  src={mainLogo}className="custom_brandName" alt="fireSpot"/> */}
+
           </div>
             <Divider section />
 
@@ -94,15 +97,14 @@ handleClickOutside(event) {
               <Radio toggle className="custom_radio_toogle"/>
               <span className="custom_radio_toogle_label">Advanced</span></div>
             </div>
-            {!this.state.value&&
+
               <div className="custom_question_text_hi">
                 <Icon name='lightbulb outline' color='red'/>
                 <p className="we-found-questi">
                     We found
                     <span className="custom_number_text"> {this.state.questions.length || 0} </span>
-                   questions about  <span className='custom_hightlengthed_text'>{this.state.value ||  window.location.hostname}</span> for your answer</p>
+                   questions about  <span className='custom_hightlengthed_text'>{this.state.value ||  (window.location.hostname.length > 10 ? 'this site': window.location.hostname)}</span> for your answer</p>
               </div>
-            }
             {/* {this.state.value&&
               <Message floating>
                   You highlighted:  {this.state.value}

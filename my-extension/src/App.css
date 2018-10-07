@@ -67,10 +67,11 @@ align-items: center;
       max-width: 500px;
       padding: 20px;
     margin: auto;
+    /* margin-top: 100px; */
 }
 
 .what-the-differen {
-  	height: 22px;	width: 284px;	color: #4A4A4A;	font-family: Avenir;	font-size: 16px;	font-weight: 300;	letter-spacing: -0.39px;	line-height: 22px;
+  		width: 284px;	color: #4A4A4A;	font-family: Avenir;	font-size: 16px;	font-weight: 300;	letter-spacing: -0.39px;	line-height: 22px;
   }
 
 .answer-more-similar {
@@ -88,7 +89,7 @@ margin-top: 20px;
 }
 
 .custom_brandName{
-  	height: 20px;	width: 123px;	color: #9B9B9B;	font-family: Avenir;	font-size: 15px;	font-weight: 500;	letter-spacing: -0.45px;	line-height: 20px;
+  	width: 123px;	color: #9B9B9B;	font-family: Avenir;	font-size: 15px;	font-weight: 500;	letter-spacing: -0.45px;	line-height: 20px;
 }
 
 
@@ -116,7 +117,7 @@ align-items: center;
 }
 .custom_check_your_anser{
   width: 129px;
-  color: #6077F7;
+  color: #6077F7 !important;
   font-family: Avenir;
   font-size: 13px;
   font-weight: 300;

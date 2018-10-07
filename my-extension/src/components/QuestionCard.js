@@ -5,14 +5,26 @@ import { Button, Card, Image, Icon, Form, Radio, Divider } from 'semantic-ui-rea
 class QuestionCard extends Component {
   constructor(props) {
     super(props);
-    this.state = {value: ""};
+    this.state = {"value": "", "checked": false};
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(e, {value}) {
     this.setState({value});
+    // console.log(e, value)
+    // console.log(this.props.question)
   }
+  handleSubmit(){
+    // if(this.props.question.correctChoice == this.state.value){
+    //
+    // }
+    console.log(this.props.question.correctChoice)
+    console.log(this.state.value)
 
+    this.setState({"checked": true});
+
+  }
   render() {
     return (
    <Card style={{"borderRadus" :0}}>
@@ -55,8 +67,8 @@ class QuestionCard extends Component {
                 className='custom_options_radio'
                 label={x}
                 name='radioGroup'
-                value={x}
-                checked={this.state.value === x}
+                value={i}
+                checked={this.state.value === i}
                 onChange={this.handleChange}
               />
             )
@@ -68,9 +80,21 @@ class QuestionCard extends Component {
 
      <Card.Content extra>
        <div>
-         <p className='custom_check_your_anser'>
-           Check your answer
-         </p>
+         {this.state.checked?
+              {this.props.question.correctChoice != null &&
+              ( this.props.question.correctChoice - 1 ) === this.state.value ?
+              <p className='custom_check_your_anser'>
+                  <Icon name='check'/>Correct</p>
+              :   <p className='custom_check_your_anser'>
+                    <Icon name='check'/>InCorrect
+                  </p>
+             }
+
+           : <p className='custom_check_your_anser' onClick={this.handleSubmit}>
+              Check your answer
+            </p>
+         }
+
          {/* <Button basic color='red'>
            Skip
          </Button> */}
