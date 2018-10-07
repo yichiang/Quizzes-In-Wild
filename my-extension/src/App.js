@@ -22,6 +22,7 @@ class App extends Component {
       this.handleClickOutside = this.handleClickOutside.bind(this);
       this.handleAddQuestion = this.handleAddQuestion.bind(this);
       // this.handleDomain = this.handleDomain.bind(this);
+      this.onDismissQuestion = this.onDismissQuestion.bind(this);
       // this.handleDomain();
     }
 
@@ -47,7 +48,12 @@ handleClickOutside(event) {
    // }
  }
 
- handleDomain(){
+ onDismissQuestion(index){
+   console.log(index)
+    var questions = [...this.state.questions];
+    questions.splice(index, 1);
+
+   this.setState({questions: questions})
    // var hostname = window.location.hostname
    // console.log(hostname);
    // console.log(this)
@@ -79,6 +85,7 @@ handleClickOutside(event) {
         </Message>
         <Question questionData={this.state.questions} />
         <AddQuestion onAddQuestion={this.handleAddQuestion}/>
+        <Question questionData={this.state.questions} onDismissQuestion={this.onDismissQuestion}/>
       </div>
     );
   }
