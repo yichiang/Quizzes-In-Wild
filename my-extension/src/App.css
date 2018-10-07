@@ -99,7 +99,7 @@ margin-top: 20px !important;
 justify-content: space-between;
 align-items: center;
 }
-.we-found-questi {	height: 19px;	width: 363px;	color: #4A4A4A;	font-family: Avenir;	font-size: 14px;	font-weight: 300;	letter-spacing: -0.42px;	line-height: 19px;}
+.we-found-questi {	width: 363px;	color: #4A4A4A;	font-family: Avenir;	font-size: 14px;	font-weight: 300;	letter-spacing: -0.42px;	line-height: 19px;}
 .custom_hightlengthed_text{
   background: #6077F7;
   color: white;
@@ -115,6 +115,7 @@ align-items: center;
 .custom_question_text_hi{
   display: flex;
   margin-bottom: 22px;
+  flex-wrap: wrap;
 }
 .custom_check_your_anser{
   width: 129px;
@@ -143,4 +144,23 @@ align-items: center;
 .custom_options_radio label {	color: #4A4A4A;	font-family: Avenir;	font-size: 13px;	font-weight: 300;	letter-spacing: -0.31px;	line-height: 18px;}
 .custom_source_text{
   font-size: 10px;
+}
+
+.customer_correct_answer{
+  color: #21ba45!important;
+}
+
+.customer_incorrect_answer{
+  color: #e03997!important;
+}
+.custom_strong {
+  font-weight: 500;
+}
+.custom_react_App .ui.toggle.checkbox input:checked~.box:before,.custom_react_App .ui.toggle.checkbox input:checked~label:before {
+    background-color: #6077F7!important;
+}
+
+.ui.basic.button, .ui.basic.buttons .button.custom_save_pdf{
+  color: #6077F7 !important;
+  border-color: 1px solid #6077F7 !important;
 }
