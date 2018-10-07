@@ -8,7 +8,7 @@ class Question extends Component {
     console.log(this.props)
     return (
       <Card.Group>
-        { this.props.questionData.map(x=><QuestionCard question={x}/>)
+        { this.props.questionData.map((x,i) =><QuestionCard question={x} questionIndex={i} onDismissQuestion={this.props.onDismissQuestion}/>)
 }
 </Card.Group>
 

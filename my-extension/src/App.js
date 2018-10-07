@@ -19,7 +19,7 @@ class App extends Component {
       this.handleChange = this.handleChange.bind(this);
       // this.handleSubmit = this.handleSubmit.bind(this);  this.setWrapperRef = this.setWrapperRef.bind(this);
       this.handleClickOutside = this.handleClickOutside.bind(this);
-      // this.handleDomain = this.handleDomain.bind(this);
+      this.onDismissQuestion = this.onDismissQuestion.bind(this);
       // this.handleDomain();
     }
 
@@ -45,7 +45,12 @@ handleClickOutside(event) {
    // }
  }
 
- handleDomain(){
+ onDismissQuestion(index){
+   console.log(index)
+    var questions = [...this.state.questions];
+    questions.splice(index, 1);
+
+   this.setState({questions: questions})
    // var hostname = window.location.hostname
    // console.log(hostname);
    // console.log(this)
@@ -65,7 +70,7 @@ handleClickOutside(event) {
 
           <input id="myinput"  type="hidden" name="highlightedText" value={this.state.value} onChange={this.handleChange} onchange={this.handleChange} />
         </Message>
-        <Question questionData={this.state.questions} />
+        <Question questionData={this.state.questions} onDismissQuestion={this.onDismissQuestion}/>
       </div>
     );
   }
