@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import {Container, List, Button} from 'semantic-ui-react';
 
 class Question extends Component {
-  render(props) {
+  render() {
     return (
       <Container>
         <h2>
-          {props.questionNumber} What is the worst fruit in a fruit cup?
+          {this.props.questionNumber} What is the worst fruit in a fruit cup?
         </h2>
         <List>
           <List.Item><Button>Canteloupe</Button></List.Item>
