@@ -39,7 +39,7 @@ class AddQuestion extends Component {
 
   render() {
     return (
-      <Card>
+      <Card style={{"borderRadus" :0}}>
         <Card.Content>
           <Card.Header>
         <div className="qitw_col">
@@ -60,7 +60,7 @@ class AddQuestion extends Component {
           </Button>
         </Card.Content>
     </Card>
- 
+
     );
   }
 };

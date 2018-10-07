@@ -79,14 +79,19 @@ handleClickOutside(event) {
   render() {
     return (
       <div className="App">
-        <Message floating>
-          You highlighted:
-          {this.state.value}
 
-          <input id="myinput"  type="hidden" name="highlightedText" value={this.state.value} onChange={this.handleChange}/>
-        </Message>
-        <AddQuestion onAddQuestion={this.handleAddQuestion}/>
+            {this.state.value&&
+              <Message floating>
+                  You highlighted:  {this.state.value}
+
+               <input id="myinput"  type="hidden" name="highlightedText" value={this.state.value} onChange={this.handleChange}/>
+             </Message>
+           }
+
+
+
         <Question questionData={this.state.questions} onDismissQuestion={this.onDismissQuestion}/>
+        <AddQuestion onAddQuestion={this.handleAddQuestion}/>
       </div>
     );
   }
