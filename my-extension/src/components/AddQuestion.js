@@ -8,7 +8,8 @@ class AddQuestion extends Component {
     this.handleOnClickAnswer = this.handleOnClickAnswer.bind(this);
     this.handleOnClickInput = this.handleOnClickInput.bind(this);
 
-    this.state = {asking: false};
+    this.handleChange = this.handleChange.bind(this);
+    this.state = {asking: false, value: ""};
   }
 
   handleOnClickAsk() {
@@ -21,7 +22,19 @@ class AddQuestion extends Component {
 
   handleOnClickInput() {
     this.setState({asking: false});
-    this.props.onAddQuestion();
+    this.props.onAddQuestion({
+      "name": this.state.value,
+      "tags":["Big Bang Theory", "science"],
+      "domains":[window.location.hostname],
+      "answers":[],
+      "choices":[],
+      "votes": 0,
+      "dismiss": 0
+    });
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
   }
 
   render() {
@@ -36,7 +49,7 @@ class AddQuestion extends Component {
         </Card.Content>
         <Card.Content extra>
           {this.state.asking ?
-            <Input action={<Button onClick={this.handleOnClickInput}>Add</Button>} placeholder='Type...' />
+            <Input onChange={this.handleChange} action={<Button onClick={this.handleOnClickInput}>Add</Button>} placeholder='Type...' />
             :
             <Button basic color='green' onClick={this.handleOnClickAsk}>
               Add a Question

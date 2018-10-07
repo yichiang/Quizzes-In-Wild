@@ -65,11 +65,10 @@ handleClickOutside(event) {
 
  }
  handleAddQuestion(newQuestion) {
-  alert("addq");
   this.setState({
-    foundQuestions: [
+    questions: [
       newQuestion,
-      ...this.state.foundQuestions
+      ...this.state.questions
     ]
   });
  }
@@ -83,7 +82,6 @@ handleClickOutside(event) {
 
           <input id="myinput"  type="hidden" name="highlightedText" value={this.state.value} onChange={this.handleChange}/>
         </Message>
-        <Question questionData={this.state.questions} />
         <AddQuestion onAddQuestion={this.handleAddQuestion}/>
         <Question questionData={this.state.questions} onDismissQuestion={this.onDismissQuestion}/>
       </div>
