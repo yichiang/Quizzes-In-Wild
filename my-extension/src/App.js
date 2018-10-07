@@ -83,7 +83,11 @@ handleClickOutside(event) {
           <div className="custom_header_panel">
             <div>
               <Icon name='angle left'/>
-            <Button basic color='violet' content='Violet'>Save View PDF</Button></div>
+            <Button basic className='custom_save_pdf' content='Violet'>
+              <Icon name='file pdf'/>
+              Save View PDF
+            </Button>
+            </div>
             <p className="custom_brandName">Quizzes in the Wild</p>
             {/* <img  src={mainLogo}className="custom_brandName" alt="fireSpot"/> */}
 
@@ -94,8 +98,8 @@ handleClickOutside(event) {
               <p className="choose-your-level-to">Choose your level to start taking quizzes:</p>
               <div className="custom_toogle_group">
                 <span className="custom_radio_toogle_label">Beginner</span>
-              <Radio toggle className="custom_radio_toogle"/>
-              <span className="custom_radio_toogle_label">Advanced</span></div>
+                <Radio toggle className="custom_radio_toogle"/>
+                <span className="custom_radio_toogle_label">Advanced</span></div>
             </div>
 
               <div className="custom_question_text_hi">

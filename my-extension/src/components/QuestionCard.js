@@ -35,11 +35,11 @@ class QuestionCard extends Component {
         <div className="qitw_col">
           <div>
             <span className='custom_upvotes'>
-              <span>{this.props.question.votes || 0} Upvotes</span>
+              <span className='custom_strong'>{this.props.question.votes || 0} Upvotes</span>
               <Icon name='thumbs up' />
             </span>
             <span className='custom_downvotes'>
-              <span>{this.props.question.downvotes || 0} Downvotes</span>
+              <span className='custom_strong'>{this.props.question.downvotes || 0} Downvotes</span>
               <Icon name='thumbs down' />
             </span>
           </div>
@@ -83,10 +83,10 @@ class QuestionCard extends Component {
          {this.state.checked&&this.props.question.correctChoice != null &&
           <div>
             {( this.props.question.correctChoice - 1  === this.state.value )?
-            <p className='custom_check_your_anser'>
+            <p className='custom_check_your_anser customer_correct_answer'>
                 <Icon name='check'/>Correct
               </p>
-            : <p className='custom_check_your_anser'>
+            : <p className='custom_check_your_anser customer_incorrect_answer'>
                   <Icon name='times'/>Incorrect
                 </p>
               }

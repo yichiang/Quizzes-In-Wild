@@ -144,3 +144,22 @@ align-items: center;
 .custom_source_text{
   font-size: 10px;
 }
+
+.customer_correct_answer{
+  color: #21ba45!important;
+}
+
+.customer_incorrect_answer{
+  color: #e03997!important;
+}
+.custom_strong {
+  font-weight: 500;
+}
+.custom_react_App .ui.toggle.checkbox input:checked~.box:before,.custom_react_App .ui.toggle.checkbox input:checked~label:before {
+    background-color: #6077F7!important;
+}
+
+.ui.basic.button, .ui.basic.buttons .button.custom_save_pdf{
+  color: #6077F7 !important;
+  border-color: 1px solid #6077F7 !important;
+}
