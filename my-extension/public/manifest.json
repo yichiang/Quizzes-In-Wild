@@ -29,7 +29,7 @@
   {
     "all_frames": false,
     "js": ["jquery-3.3.1.min.js", "content_script.js"],
-    "matches": ["https://kubernetes.io/*"],
+    "matches": ["https://kubernetes.io/*", "https://science.howstuffworks.com/*"],
     "run_at": "document_idle"
   }
 ]
