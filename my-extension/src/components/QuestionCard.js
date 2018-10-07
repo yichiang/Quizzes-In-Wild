@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // import {Container, List, Button} from 'semantic-ui-react';
-import { Button, Card, Image, Icon, Form, Radio } from 'semantic-ui-react'
+import { Button, Card, Image, Icon, Form, Radio, Divider } from 'semantic-ui-react'
 
 class QuestionCard extends Component {
   constructor(props) {
@@ -17,12 +17,33 @@ class QuestionCard extends Component {
     return (
    <Card style={{"borderRadus" :0}}>
      <Card.Content>
+
        <Card.Header>
+         <div>
+        <div className="qitw_col">
+          <div>
+            <span className='custom_upvotes'>
+              <span>321 Upvotes</span>
+              <Icon name='thumbs up' />
+            </span>
+            <span className='custom_downvotes'>
+              <span>1 Downvotes</span>
+              <Icon name='thumbs down' />
+            </span>
+          </div>
+          <div className="posted-on-date">
+            Posted on Oct 6, 2016
+          </div>
+          <Icon name='times' disabled onClick={() => this.props.onDismissQuestion(this.props.questionIndex)}/>
+
+        </div>
+      </div>
+       <Divider />
       <div className="qitw_col">
         <div className="what-the-differen">{this.props.question.name}</div>
-        <Icon name='times' onClick={() => this.props.onDismissQuestion(this.props.questionIndex)}/>
 
       </div>
+
      </Card.Header>
        <Card.Meta className="qitw_tag_parent">
          {this.props.question.tags.map(x=> <span className="qitw_tag">{x}</span>)}
@@ -47,13 +68,13 @@ class QuestionCard extends Component {
        </Card.Description>
      </Card.Content>
      <Card.Content extra>
-       <div className='ui two buttons'>
-         <Button basic color='green'>
-           Submit
-         </Button>
-         <Button basic color='red'>
+       <div>
+         <p className='custom_check_your_anser'>
+           Check your answer
+         </p>
+         {/* <Button basic color='red'>
            Skip
-         </Button>
+         </Button> */}
        </div>
      </Card.Content>
    </Card>

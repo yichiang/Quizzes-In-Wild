@@ -39,7 +39,7 @@ class AddQuestion extends Component {
 
   render() {
     return (
-      <Card style={{"borderRadus" :0}}>
+      <Card style={{"borderRadus" :0}} className="custom_card_addquestion">
         <Card.Content>
           <Card.Header>
         <div className="qitw_col">

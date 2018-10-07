@@ -1,6 +1,7 @@
 .qitw_col {
       display: flex;
       justify-content: space-between;
+          align-items: center;
 }
 .qitw_tag {
   background-color: #f9f9f9;
@@ -11,7 +12,7 @@
     padding: 6px;
     text-transform: capitalize;
 }
-.ui.cards>.card{
+.ui.cards>.card, .custom_card_addquestion.card{
     border-radius: 0 !important;
 	box-shadow: 0 0 10px 0 rgba(110,110,110,0.5);
       width: 100%;
@@ -110,3 +111,22 @@ align-items: center;
   display: flex;
   margin-bottom: 22px;
 }
+.custom_check_your_anser{
+  width: 129px;
+  color: #6077F7;
+  font-family: Avenir;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: -0.31px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+.custom_upvotes {	height: 10px;		color: #6077F7;	font-family: Avenir;	font-size: 7px;	font-weight: 300;	letter-spacing: -0.34px;	line-height: 10px;
+}
+
+.custom_downvotes {	height: 10px;		color: #9B9B9B;	font-family: Avenir;	font-size: 7px;	font-weight: 300;	letter-spacing: -0.34px;	line-height: 10px;}
+.posted-on-date {	height: 14px;	color: #9B9B9B;	font-family: Avenir;	font-size: 10px;	font-weight: 300;	letter-spacing: -0.48px;	line-height: 14px;}
