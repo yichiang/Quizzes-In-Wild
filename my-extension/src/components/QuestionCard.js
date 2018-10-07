@@ -9,7 +9,7 @@ class QuestionCard extends Component {
      <Card.Content>
        <Card.Header>
       <div className="qitw_col">
-        <div>{this.props.question.name}</div>
+        <div className="what-the-differen">{this.props.question.name}</div>
         <Icon disabled name='times' onClick={() => this.props.onDismissQuestion(this.props.questionIndex)}/>
 
       </div>

@@ -14,10 +14,49 @@
 .ui.cards>.card{
     border-radius: 0 !important;
     box-shadow: -1px -4px 7px -2px rgba(0,0,0,0.75);
-    width: 300px;
+    width: 100%;
+
+    margin-bottom: 10px;
 }
 
 .qitw_tag_parent{
   display: flex;
   flex-wrap: wrap;
 }
+/* .ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before
+{
+  background-color: #1E8FE1 !important;
+} */
+
+.ui.checkbox input:indeterminate~.box:after, .ui.checkbox input:indeterminate~label:after {
+    font-size: 12px;
+    content: '\E801';
+    background: #1E8FE1;
+}
+
+.ui.toggle.checkbox .box:before, .ui.toggle.checkbox label:before {
+    background: none;
+    border: 1px solid #1E8FE1;
+}
+
+.custom_radio_toogle {
+  margin: 5px;
+}
+
+.custom_toogle_group {
+  display: flex;
+  align-items: center;
+}
+.custom_panel{
+  display: flex;
+justify-content: space-between;
+}
+.custom_radio_toogle_label {	height: 14px;	width: 38px;	color: #4A4A4A;	font-family: Avenir;	font-size: 10px;	font-weight: 300;	letter-spacing: -0.34px;	line-height: 14px;}
+.choose-your-level-to {	height: 20px;	width: 266px;	color: #4A4A4A;	font-family: Avenir;	font-size: 15px;	letter-spacing: -0.45px;	line-height: 20px;}
+.custom_react_App{
+      max-width: 500px;
+}
+
+.what-the-differen {
+  	height: 22px;	width: 284px;	color: #4A4A4A;	font-family: Avenir;	font-size: 16px;	font-weight: 300;	letter-spacing: -0.39px;	line-height: 22px;
+  }

@@ -3,7 +3,7 @@ import './App.css';
 import Question from './components/Question';
 import questionData from './questions.json';
 import AddQuestion from './components/AddQuestion';
-import { Message } from 'semantic-ui-react'
+import { Message, Radio } from 'semantic-ui-react'
 
 class App extends Component {
   constructor(props) {
@@ -78,8 +78,14 @@ handleClickOutside(event) {
 
   render() {
     return (
-      <div className="App">
-
+      <div className="custom_react_App">
+            <div className="custom_panel">
+              <p className="choose-your-level-to">Choose your level to start taking quizzes:</p>
+              <div className="custom_toogle_group">
+                <span className="custom_radio_toogle_label">Beginner</span>
+              <Radio toggle className="custom_radio_toogle"/>
+              <span className="custom_radio_toogle_label">Advanced</span></div>
+            </div>
             {this.state.value&&
               <Message floating>
                   You highlighted:  {this.state.value}
