@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ajv": "^6.5.4",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4"
+    "react-scripts": "2.0.4",
+    "semantic-ui-css": "^2.4.0",
+    "semantic-ui-react": "^0.82.5"
   },
   "scripts": {
     "start": "HTTPS=true PORT=8080 react-scripts start",
