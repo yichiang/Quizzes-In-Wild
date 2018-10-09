@@ -3,12 +3,16 @@
 * This project was built within 44 hours, and thus the code quality wasn't good.
 
 ## Things we can do in the future
- - Using `backgrond.js` instead of `content_script.js`. at chrome extension
- - Allow users to turn off our panels
- - Scrape data or partner with other sites.
- - Host sites instead of loading everything into extension.
- - Only trigger action if you select words outside our panels.
- - The css might change original pages design.
+ - Using `backgrond.js` instead of `content_script.js` at chrome extension
+ - Allow users to turn off or turn on our panel
+ - Scrape more data or partner with other sites.
+ - Host our React application on the cloud instead of loading everything into extension.
+ - **Only trigger the action if you select words outside our panel.**
+ - Make votes and downvotes work
+ - The css might change original pages design, and thus we want to change the way we load it
+ - Personalize quizzes by using Machine Learning
+ - Auto-tagging by using Machine Learning
+ - Add View AS PDF function
 
 ## Team
 Bernease Herman,
